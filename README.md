@@ -14,7 +14,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -71,46 +71,32 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="main-content bg-[var(--white)] w-(--full-width) lg:w-(--content-width) text-[var(--dark-slate-grey)] rounded-3xl shadow-(--my-shadow) md:pl-8 md:pr-5 md:pt-5 md:pb-5 mx-0 md:mx-auto md:mt-8 flex flex-col md:flex-row">
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+setTimeout(function() {
+        errorMsg.classList.add("hidden");
+        emailInputEl.classList.remove("border-red-700", "bg-red-100", "text-red-700");
+        emailInputEl.value = ""; // Clear the input
+      }, 3000);
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I would like to get better in Tailwind CSS and Javascript and move on to building projects with React
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-[Tailwind Documentation](https://tailwindcss.com/docs) - This helped me to learn tailwind and use it in my project smoothly.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/codewthv)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
