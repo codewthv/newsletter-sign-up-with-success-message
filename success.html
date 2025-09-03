@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for Subscribing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+      :root{
+        --tomato: hsl(4, 100%, 67%);
+        --dark-slate-grey: hsl(234, 29%, 20%);
+        --charcoal-grey: hsl(235, 18%, 26%);
+        --grey: hsl(231, 7%, 60%);
+        --white: hsl(0, 0%, 100%);
+      }
+    </style>
+</head>
+<body class="md:bg-[var(--charcoal-grey)] lg:w-full md:bg-(--white) ">
+    <section class="main">
+        <div class="success-card bg-(--white) h-150 md:h-auto md:w-90 md:p-8 p-10 mx-0 md:mx-auto mt-0 md:mt-30 md:rounded-3xl">
+            <div class="img mb-2 md:mt-0 mt-15"><img src="./assets/images/icon-success.svg" alt=""></div>
+            <h1 class="text-[var(--dark-slate-grey)] font-bold text-4xl mb-4 md:mt-0 mt-10">Thanks for Subscribing!</h1>
+            <p class="normal-case text-(--dark-slate-grey) text-[16px]">A confirmation email has been sent to <span class="lowercase font-bold">ash@loremcompany.com</span>.
+                Please open it and click the button inside to confirm your subscription
+            </p>
+
+            <div class="btn bg-(--dark-slate-grey) hover:bg-(--tomato) p-2 text-white w-auto mx-auto text-center mt-15 md:mt-5 rounded-sm font-semibold cursor-pointer" id="dismiss-btn"><button class="cursor-pointer" id="dismiss-btn">Dismiss this message</button></div>
+        </div>
+    </section>
+</body>
+
+<script src="./script2.js"></script>
+</html>

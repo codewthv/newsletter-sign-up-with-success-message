@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+      :root{
+        --tomato: hsl(4, 100%, 67%);
+        --dark-slate-grey: hsl(234, 29%, 20%);
+        --charcoal-grey: hsl(235, 18%, 26%);
+        --grey: hsl(231, 7%, 60%);
+        --white: hsl(0, 0%, 100%);
+        --content-width:70%;
+        --image-width: 50%;
+        --full-width: 100%;
+        --my-shadow: box-shadow: 0px 10px 10px 0px rgba(255, 98, 87, 0.496);
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--charcoal-grey)] text-[var(--white)] font-sans">
+    
+    <section class="main">
+      <div class="main-content bg-[var(--white)] w-(--full-width) lg:w-(--content-width) text-[var(--dark-slate-grey)] rounded-3xl shadow-(--my-shadow) md:pl-8 md:pr-5 md:pt-5 md:pb-5 mx-0 md:mx-auto md:mt-8 flex flex-col md:flex-row">
+        <!-- Sign-up form start -->
+
+        <div class="content-div p-4 md:pr-10 pt-10 w-(--full-width) md:w-3/5 order-2 md:order-1 ">
+          <div class="content md:p-3">
+            <h2 class="text-[var(--dark-slate-grey)] font-bold text-4xl mb-5">Stay updated!</h2>
+
+            <p class="mb-2 text-[var(--dark-slate-grey)]text-[16px]">Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <ul class="mt-5">
+              <li class="flex gap-2 mb-2 text-[var(--dark-slate-grey)]"><img src="./assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+              <li class="flex gap-2 mb-2 text-[var(--dark-slate-grey)]"><img src="./assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+              <li class="flex gap-2 mb-2 text-[var(--dark-slate-grey)]"><img src="./assets/images/icon-list.svg" alt="">And much more!</li>
+            </ul>
+
+            <form action="" class="mt-5" id="newsletter-form">
+              <div class="input-group">
+                <div class="label"><label for="email" class=" text-xs font-bold text-[var(--dark-slate-grey)]">Email address</label></div>
+                <input type="email" id="email" placeholder="example@gmail.com" required class="border-1 w-full p-2 mt-1 rounded-sm cursor-pointer text-[16px] focus:outline-none">
+                <span class=" hidden text-[16px] text-sm text-(--tomato) mt-1" id="error-message">Please provide a valid email address</span>
+              </div>
+            </form>
+
+            <div class="btn bg-(--dark-slate-grey) hover:bg-(--tomato) hover:bg-[linear-gradient(90deg,hsla(346,100%,66%,1)_15%,hsla(27,91%,62%,1)_100%)] p-3 w-full text-(--white) text-center mt-5 rounded-xl shadow-lg shadow-(--grey) font-semibold cursor-pointer" id="myBtn"><button type="submit" class="cursor-pointer text-[14px]" id="myBtn">Subscribe to monthly newsletter</button></div>
+          </div>
+        </div>
+
+        <!-- Image section -->
+         <div class="img md:w-(--image-width) md:p-2 order-1 md:order-2 w-(--full-width) -mt-20 md:mt-0">
+           <div class="bg-[url('./assets/images/illustration-sign-up-desktop.svg')] md:h-120 h-80 bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+         </div>
+        <!-- Sign-up form end -->
+      </div>
+
+
+    </section>
+
+
+      <!-- Success message start -->
+
+      <!-- Thanks for subscribing!
+
+      A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.
+
+      Dismiss message -->
+
+      <!-- Success message end -->
+      
+      <div class="attribution mt-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Victory</a>.
+      </div>
+  </body>
+
+  <script src="./script.js"></script>
+
+</html>
